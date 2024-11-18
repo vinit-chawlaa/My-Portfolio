@@ -37,7 +37,7 @@ const Background = () => {
         <a href="#contact"><button className='btns5'><i className="fas fa-handshake"></i> Hire me</button></a>
       </div>
      <div className='imgdiv'  data-aos="fade-up-left" data-aos-duration="1000">
-     <img src="images/87.avif" alt="" className='avatar' />
+     <img src={`${process.env.PUBLIC_URL}/images/87.avif`} alt="" className="avatar" />
      </div>
     </div>
   )

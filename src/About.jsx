@@ -7,7 +7,7 @@ const About = () => {
     <div className="maindiv">
       <div className="leftdiv">
       <div className='imgdiv1' data-aos="flip-right" data-aos-duration="1000">
-     <img src="images/87.avif" alt="" className='avatar' style={{width:'450px'}} />
+      <img src={`${process.env.PUBLIC_URL}/images/87.avif`} alt="" className="avatar" style={{width: '450px'}} />
      </div>
       </div>
       <div className="rightdiv">
