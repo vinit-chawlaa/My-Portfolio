@@ -38,15 +38,15 @@ const Contact = () => {
                 <p>Hi there! I'm a passionate web developer with a strong focus on frontend development, specializing in creating visually appealing, responsive, and user-friendly websites that bring your brand's vision to life. With expertise in HTML, CSS, JavaScript, and React.js, I aim to deliver seamless, dynamic, and engaging user experiences that inspire and captivate.</p>
                 <br />
 
-                <h5><i className="fa-solid fa-envelope"></i> chawlaavinit@gmail.com</h5>
-                <h5><i className="fa-solid fa-phone"></i> 9116494204</h5>
+                <h5><a href="mailto:chawlaavinit@gmail.com" style={{color : 'inherit' , textDecoration : 'none'}}><i className="fa-solid fa-envelope"></i> chawlaavinit@gmail.com</a></h5>
+                <h5><a href="tel:+9116494204" style={{color : 'inherit' , textDecoration : 'none'}}><i className="fa-solid fa-phone"></i> 9116494204</a></h5>
 
                 <br />
                 <br />
 
                 <div className="icons">
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-twitter"></i>
+                <a href="https://wa.me/9116494204" style={{color : 'inherit'}}><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/vinit-chawlaa" style={{color : 'inherit'}}><i class="fa-brands fa-github"></i></a>
                 <i className="fa-brands fa-instagram"></i>
                 <i className="fa-brands fa-linkedin"></i>
                 </div>

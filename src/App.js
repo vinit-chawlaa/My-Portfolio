@@ -13,7 +13,9 @@ import Projects from './Projects';
 function App() {
   
   useEffect(()=>{
-    Aos.init();
+    Aos.init({
+      once : true
+    });
     
   },[])
   return (
