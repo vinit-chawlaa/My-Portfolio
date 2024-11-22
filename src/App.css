@@ -11,6 +11,7 @@
 
 html {
  scroll-behavior: smooth;
+
 }
 
 .App-header {
@@ -41,13 +42,14 @@ html {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .Navbar {
   background-color: #000;
   color: white;
   top: 0;
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 1000;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
@@ -127,10 +129,13 @@ nav ul li a.active::after {
   background-color: yellow;
 }
 
-body {
+html , body {
   font-family: 'Open Sans', sans-serif;
   background-color: black;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
 }
 
@@ -963,98 +968,3 @@ span .text-secondary {
   }
 }
 
-/* 
- body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  background-color: #000;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  height: 60px;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo-img {
-  height: 40px;
-}
-
-.navbar-logo-text {
-  margin-left: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-}
-
- .navbar-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-links li {
-  margin: 0 15px;
-}
-
-.navbar-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.navbar-links a:hover {
-  color: #ffc107; 
-}
-
-
-.navbar-hamburger {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Mobile Menu */
-/* .navbar-links-mobile {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: #000;
-  text-align: center;
-}
-
-.navbar-links-mobile li {
-  margin: 15px 0;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-  }
-
-  .navbar-hamburger {
-    display: block;
-  }
-}  */ 
