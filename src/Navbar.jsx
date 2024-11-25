@@ -10,20 +10,6 @@ const Navbar = () => {
     setMenubar(prev => !prev);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      // Automatically hide the menu when the screen is wide enough
-      if (window.innerWidth > 924) {
-        setMenubar(false); // Hide the menu when the width is more than 924px
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup the event listener on unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   useEffect(()=>{
    const handlewindowclick = () =>{
     setMenubar(false)
@@ -35,9 +21,11 @@ const Navbar = () => {
    }
   },[menubar])
 
+ 
+  
   return (
     <div>
-      <nav className="Navbar" data-aos="fade-down" data-aos-duration="1000">
+      <nav className="Navbar" data-aos="fade-down" data-aos-duration="1000" id="home">
       <div className="navbar-container">
         <div className="mylogo">
         <img src={`${process.env.PUBLIC_URL}/images/32.jpg`} alt="" className="img1" />

@@ -15,9 +15,9 @@ function App() {
   useEffect(()=>{
     Aos.init({
       once : true
-    });
-    
+    }); 
   },[])
+
   return (
     <div className="App">
     <Navbar/>
